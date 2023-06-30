@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+	<!-- if scripting isn't available, but meta refreshes are allowed, load the noscript page -->
+	<noscript>
+		<META HTTP-EQUIV="Refresh" CONTENT="0; URL=webfiles/noscript.htm">
+	</noscript>
+	
+	<!-- Template.js contains all our script functions and global variables -->
+	<script type="text/javascript" src="webfiles/template.js"></script>
+	
+	<script type="text/JavaScript">
+		window.onload = function RunOnLoadScripts()
+		{
+			SetTitle();
+			SetInnerWindowSize(780, 540);
+		}
+	</script>
+	
+	<!-- This default title will be replaced if scripting is available -->
+	<title>Microsoft Press Step by Step Series</title>
+	
+	<HTA:APPLICATION ID="InsideOutShell"
+		BORDER="thin"
+		CAPTION="yes"
+		SHOWINTASKBAR="yes"
+		SCROLL="no"
+		SINGLEINSTANCE="yes"
+		SYSMENU="yes"
+		ICON="webfiles/images/hammer.ico"
+		WINDOWSTATE="normal" 
+	/>
+
+</head>
+
+<frameset cols="*">
+	<frame id="mainFrame" scrolling="no" src="webfiles/welcome.htm" marginwidth="0" marginheight="0" frameborder="0" />
+</frameset>
+
+<!-- if scripting isn't available and meta refreshes aren't allowed, but frames are allowed, then load the noscript page -->
+<noscript>
+	<frameset rows="*" cols="*">
+		<frame id="mainFrame" scrolling="no" src="webfiles/noscript.htm" marginwidth="0" marginheight="0" frameborder="0" />
+	</frameset>
+</noscript>
+
+</html>

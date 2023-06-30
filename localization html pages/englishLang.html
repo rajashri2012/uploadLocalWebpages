@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preview English Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style>
+
+    .textarea-container{
+		display: inline-block;
+        position: relative;		
+    }
+    .textarea-container a{
+        position: absolute;
+		text-decoration:none;
+        z-index: 1;
+        right: 20px;
+        top: 5px;
+    }
+	</style>
+    </head>
+    <body>
+        <h1>English Website</h1>
+		<br>
+        <h3>The quick brown fox jumps over the lazy dog</h3>
+		
+		<h3>1  2  3  4  5  6  7  8  9  0  . ~ ! @ # $ % ^ & * （ ） —— + - = [ ] { } | 、 , : ' " , 《 . 》 / \ </h3>
+        <div style="margin-bottom:20px">
+            <img src="./india-innovation-center.jpg" id="fpImage" height="300" width="450">
+        </div>
+        <a href="javascript:void(0)">Go to Forcepoint</a> 
+		<br>
+		<br>
+	<style>
+
+    .section-1{
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+
+        gap: 10px;
+
+    }
+
+</style>
+		
+<div class="section-1">
+
+    <div class="textarea-container">
+
+        <textarea id="text_area" cols=35 rows=5></textarea>
+
+        <a href="javascript:void(0)" id="clear-text">&#10006;</a>
+
+    </div>
+
+    <button id="submit-btn">Submit</button>
+
+    <textarea id="text_area2" cols=35 rows=5></textarea>
+
+</div>	
+		<br>	
+		<script>
+
+		document.getElementById('submit-btn').addEventListener('click', function (e) {
+
+        const textarea1Text = document.getElementById('text_area').value;
+
+        document.getElementById('text_area2').value = textarea1Text;
+    });
+	
+		document.getElementById('clear-text').addEventListener('click',function(){
+	
+		document.getElementById('text_area').value = "";
+	
+		document.getElementById('text_area2').value = "";
+	});
+</script>
+<h3 id='secondLine'>Forcepoint, is an American multinational corporation software company headquartered in Austin, Texas, that develops computer security software and data protection, cloud access security broker, firewall and cross-domain solutions. Forcepoint was founded in 1994 as an information technology reseller called NetPartners.</h3>
+
+    </body>
+</html>

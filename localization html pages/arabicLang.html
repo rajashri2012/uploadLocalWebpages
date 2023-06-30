@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preview Arabic Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
+		<style>
+
+    .textarea-container{
+		display: inline-block;
+        position: relative;		
+    }
+    .textarea-container a{
+        position: absolute;
+		text-decoration:none;
+        z-index: 1;
+        right: 20px;
+        top: 5px;
+    }
+</style>
+    </head>
+	
+    <body>
+        <h1>Arabic Website</h1>
+		<br>
+        <h3>نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق</h3>
+		<h3>صفر  واحد  إثنان  ثلاثة  أربعة  خمسة  ستة  سبعة  ثمانية  تسعة  تسعة  ٠  ١  ٢  ٣  ٤  ٥  ٦  ٧  ٨  ٩ · ~ ！ @ # ￥ ٪ …… & * （ ） —— + - = [ ] { } | 、 ؛ ： ‘ “ و 《 . 》 、 ؟</h3>
+        <div style="margin-bottom:20px">
+            <img src="./india-innovation-center.jpg" id="fpImage" height="300" width="450">
+        </div>
+        <a href="javascript:void(0)">Go to Forcepoint</a> 
+		<br>
+		<br>
+		<style>
+
+    .section-1{
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+
+        gap: 10px;
+
+    }
+
+</style>
+
+
+
+<div class="section-1">
+
+    <div class="textarea-container">
+
+        <textarea id="text_area" cols=35 rows=5></textarea>
+
+        <a href="javascript:void(0)" id="clear-text">&#10006;</a>
+
+    </div>
+
+    <button id="submit-btn">Submit</button>
+
+    <textarea id="text_area2" cols=35 rows=5></textarea>
+
+</div>	
+		<br>	
+		<script>
+
+		document.getElementById('submit-btn').addEventListener('click', function (e) {
+
+        const textarea1Text = document.getElementById('text_area').value;
+
+        document.getElementById('text_area2').value = textarea1Text;
+    });
+	
+		document.getElementById('clear-text').addEventListener('click',function(){
+	
+		document.getElementById('text_area').value = "";
+	
+		document.getElementById('text_area2').value = "";
+	});
+
+</script>
+    </body>
+</html>
+
+
+
+   
